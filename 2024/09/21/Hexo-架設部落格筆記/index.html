@@ -14,7 +14,7 @@
 <meta property="og:description" content="為什麼要使用 Hexo 架設部落格 低成本：使用 GitHub Pages 免費架設部落格 高擴充性：Hexo 有許多主題可以選擇，也可以客製化自己的主題 高自由度：可以自由地選擇和修改部落格的樣式和功能 高效率：Hexo 有許多套件可以選擇，也可以客製化自己的套件  另外過程中可以學習使用 Git 和 GitHub 來管理部落格的版本，也可以學習到如何使用 Markdown 來撰寫部落格文章。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2024-09-21T06:11:33.000Z">
-<meta property="article:modified_time" content="2024-09-21T06:24:25.310Z">
+<meta property="article:modified_time" content="2024-09-21T12:11:11.529Z">
 <meta property="article:author" content="NK LIU">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -126,6 +126,30 @@
 <li><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">Mist</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">Muse</a></li>
 </ul>
+<h2 id="推薦套件"><a href="#推薦套件" class="headerlink" title="推薦套件"></a>推薦套件</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-generator-search">hexo-generator-search</a>：用來搜尋文章</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a>：用來生成 RSS </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-generator-sitemap">hexo-generator-sitemap</a>：用來生成 sitemap</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tobias-kaerst-software/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a>：用來生成百度 sitemap</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pandao/hexo-generator-json-content">hexo-generator-json-content</a>：用來生成 json 格式的文章資料，方便其他地方使用</li>
+</ul>
+<h2 id="推薦流程"><a href="#推薦流程" class="headerlink" title="推薦流程"></a>推薦流程</h2><ol>
+<li>先根據以上步驟安裝好 hexo 本體、theme、套件</li>
+<li>在 <code>_config.yml</code> 中設定好相關資訊<ol>
+<li>將 <code>default_layout</code> 改成 <code>draft</code>，這樣預設就不會渲染這些文章，之後要發布的時候再改成 <code>post</code></li>
+</ol>
+</li>
+<li>開始寫作</li>
+</ol>
+<h2 id="進階功能"><a href="#進階功能" class="headerlink" title="進階功能"></a>進階功能</h2><p><strong>文章加密</strong><br>使用 <a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">Hexo-Blog-Encrypt</a> 套件來加密文章。教學文章可以參考這一篇<a target="_blank" rel="noopener" href="https://www.itfanr.cc/2021/04/16/hexo-blog-article-encryption/">Hexo博客文章加密</a></p>
+<p><strong>至頂文章</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.itfanr.cc/2019/09/05/hexo-top-optimize/">Hexo 至頂文章設定</a></li>
+</ul>
+<p><strong>圖床</strong></p>
+<ul>
+<li>建議使用 <a target="_blank" rel="noopener" href="https://firebase.google.com/">Firebase</a> 作為圖床，而不是直接上傳到 Github。</li>
+</ul>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo 官方文件</a></li>
 <li><a target="_blank" rel="noopener" href="https://courses.hexschool.com/courses/enrolled/2484395">2024 體驗營 - Hexo 從零打造個人品牌網站 - 六角學院</a></li>
@@ -134,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://nkliu1772.github.io/2024/09/21/Hexo-%E6%9E%B6%E8%A8%AD%E9%83%A8%E8%90%BD%E6%A0%BC%E7%AD%86%E8%A8%98/" data-id="cm1brlrk100023mpoeeozhczw" data-title="Hexo 架設部落格筆記" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://nkliu1772.github.io/2024/09/21/Hexo-%E6%9E%B6%E8%A8%AD%E9%83%A8%E8%90%BD%E6%A0%BC%E7%AD%86%E8%A8%98/" data-id="cm1c5ib37000bl9po9y40fa47" data-title="Hexo 架設部落格筆記" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -146,11 +170,15 @@
     
 <nav id="article-nav">
   
-  
-    <a href="/2024/09/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2024/09/21/%E6%B8%AC%E8%A9%A6%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E5%A5%97%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          測試加密文章套件
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -169,7 +197,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">標籤</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" rel="tag">hexo, 加密文章</a></li></ul>
     </div>
   </div>
 
@@ -179,7 +207,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo-%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" style="font-size: 10px;">hexo, 加密文章</a>
     </div>
   </div>
 
@@ -201,11 +229,11 @@
       <ul>
         
           <li>
-            <a href="/2024/09/21/Hexo-%E6%9E%B6%E8%A8%AD%E9%83%A8%E8%90%BD%E6%A0%BC%E7%AD%86%E8%A8%98/">Hexo 架設部落格筆記</a>
+            <a href="/2024/09/21/%E6%B8%AC%E8%A9%A6%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E5%A5%97%E4%BB%B6/">測試加密文章套件</a>
           </li>
         
           <li>
-            <a href="/2024/09/20/hello-world/">Hello World</a>
+            <a href="/2024/09/21/Hexo-%E6%9E%B6%E8%A8%AD%E9%83%A8%E8%90%BD%E6%A0%BC%E7%AD%86%E8%A8%98/">Hexo 架設部落格筆記</a>
           </li>
         
       </ul>
